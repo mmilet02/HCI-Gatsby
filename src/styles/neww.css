@@ -1,0 +1,40 @@
+.glavni{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+.sporedni{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 50%;
+}
+
+.sporedni form{
+
+    width: 100%;
+}
+
+.sporedni form input{
+    
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        background-color: white;
+        color: orange;
+        border: 2px solid orange;
+        width: 20%;
+        height: 30px;
+        border-radius: 25px;
+        
+    }
+    .sporedni form input:hover{
+        
+        background-color: orange;
+        color: white;
+        cursor: pointer;
+    }

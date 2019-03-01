@@ -1,0 +1,257 @@
+.main_3{
+    
+        width: 80%;
+        height: 500px;
+        border-radius: 25px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: #333;
+        display: grid;
+        grid-template-columns:1fr 1fr ;
+        grid-template-rows: 25% 21% 21% 21% 12%;
+    }
+.registracija{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+.registracija h1{
+    height: 100%;
+    font-size: 3vw;
+}
+.email{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.email p{
+    margin-left: 120px;
+    font-size: 2vw;
+}
+
+.email input{
+
+    margin-left: 120px;
+    margin-right:  20px;
+    width: 55%;
+    border-radius: 25px;
+    height: 30px;
+    padding-left: 10px;
+}
+.email input:focus{
+    
+    border-color: rgb(255, 251, 5);
+}
+.ime{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.ime p{
+    margin-left: 120px;
+    font-size: 2vw;
+}
+.ime input{
+    margin-left: 120px;
+    width: 55%;
+    border-radius: 25px;
+    height: 30px;
+    padding-left: 10px;
+ }
+ .ime input:focus{
+    
+    border-color: rgb(255, 251, 5);
+}
+.prezime{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.prezime p{
+    margin-left: 120px;
+    font-size: 2vw;
+}
+
+.prezime input{
+    margin-left: 120px;
+    margin-right:  20px;
+    width: 55%;
+    border-radius: 25px;
+    height: 30px;
+    padding-left: 10px;
+}
+.prezime input:focus{
+    
+    border-color: rgb(255, 251, 5);
+}
+.sifra1{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.sifra1 p{
+    margin-left: 120px;
+    font-size: 2vw;
+}
+
+.sifra1 input{
+    margin-left: 120px;
+    margin-right:  20px;
+    width: 55%;
+    border-radius: 25px;
+    height: 30px;
+    padding-left: 10px;
+}
+.sifra1 input:focus{
+    
+    border-color: rgb(255, 251, 5);
+}
+.ponovi_sifra{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.ponovi_sifra p{
+    margin-left: 120px;
+    font-size: 2vw;
+}
+
+.ponovi_sifra input{
+
+    margin-left: 120px;
+    margin-right: 20px;
+    width: 55%;
+    border-radius: 25px;
+    height: 30px;
+    padding-left: 10px;
+}
+.ponovi_sifra input:focus{
+    
+    border-color: rgb(255, 251, 5);
+}
+.botun1{
+    grid-column: 1/3;
+    grid-row: 5/6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.botun1 input{
+
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    background-color: white;
+    color: red;
+    border: 2px solid red;
+    width: 30%;
+    height: 40px;
+    border-radius: 25px;
+}
+.botun1 input:hover{
+    
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+@media screen and (max-width: 870px) {
+    
+     .main_3{
+             grid-template-columns:1fr 1fr ;
+             grid-template-rows: 14% 12% 12% 12% 12% 12% 12% 14%;
+         }
+    .registracija{
+            grid-column: 1/3;
+            grid-row: 1/2;
+            justify-content: space-between;
+    }
+    .email{
+        grid-column: 1/3;
+        grid-row: 3/4;
+        justify-content: space-between;
+    }
+    .email input{
+        margin-right: 30px;
+    }
+    .email p{
+        padding-left: 20px;
+        font-size: 3vw;
+    }
+    .ime{
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+    .ime p{
+        
+             font-size: 3vw;
+         }
+    .ime input{
+        margin-right: 30px;
+    }
+    .prezime{
+        grid-column: 1/3;
+        grid-row: 5/6;
+        justify-content: space-between;
+    }
+    .prezime input{
+        margin-right: 30px;
+    }
+    .prezime p{
+        padding-left: 20px;
+        font-size: 3vw;
+    }
+     .sifra1{
+         grid-column: 1/3;
+         grid-row: 6/7;
+         justify-content: space-between;
+     }
+     .sifra1 input{
+         margin-right: 30px;
+     }
+     .sifra1 p{
+    
+         font-size: 3vw;
+     }
+     .ponovi_sifra{
+        grid-column: 1/3;
+        grid-row: 7/8;
+        justify-content: space-between;
+    }
+    .ponovi_sifra input{
+        margin-right: 30px;
+    }
+    .ponovi_sifra p{
+        padding-left: 20px;
+        font-size: 3vw;
+    }
+     .botun1{
+         grid-column: 1/3;
+         grid-row: 8/9;
+     }
+  
+ }
+ 
+ /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+ @media screen and (max-width: 500px) {
+ 
+     
+ }

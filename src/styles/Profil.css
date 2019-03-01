@@ -1,0 +1,95 @@
+.row_333 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+.main_333 {
+  width: 20%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 30px;
+}
+.main_333 p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: #333;
+}
+.favorite_naslov {
+  font-size: 2vw;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.main_33 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 20%;
+  height: 300px;
+}
+.slikaa img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.info {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.info p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.slikaa {
+  width: 150px;
+  height: 150px;
+  border-radius: 200%;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #333;
+  margin-left: 20%;
+  background-image: url("../images/profil_slika.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+  margin-right: 30px;
+}
+@media screen and (max-width: 900px) {
+  .main_333 {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .main_333 {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .row_333 {
+    flex-direction: column;
+  }
+  .main_333 {
+    height: 170px;
+    width: 100%;
+  }
+  .main_33 {
+    width: 100%;
+    align-items: center;
+    height: 170px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .slikaa {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}

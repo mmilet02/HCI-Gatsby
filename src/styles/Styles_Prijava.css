@@ -1,0 +1,225 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.row_1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.main_2 {
+  width: 50%;
+  height: auto;
+  border-radius: 25px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.veliki {
+  width: 100%;
+  height: auto;
+}
+form {
+  width: 100%;
+}
+form p {
+  color: red;
+  margin-top: 3px;
+  margin-bottom: 4px;
+}
+.informacije {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+.prijava {
+  display: flex;
+  justify-content: center;
+}
+.prijava h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 100%;
+  font-size: 2.5vw;
+  color: #333;
+  font-weight: 700;
+}
+.korisnicko {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.korisnicko h2 {
+  font-size: 2vw;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #333;
+}
+.korisnicko input {
+  width: 90%;
+  border-radius: 25px;
+  height: 30px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+.korisnicko input:focus {
+  border-color: rgb(0, 0, 230);
+}
+.sifra {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sifra h2 {
+  font-size: 2vw;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #333;
+}
+
+.sifra input {
+  padding-left: 10px;
+  width: 90%;
+  border-radius: 25px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+.sifra input:focus {
+  border-color: rgb(0, 0, 230);
+}
+.botun {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nesto {
+  width: 100%;
+  height: auto;
+}
+.botun button:disabled {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  background-color: white;
+  color: rgb(80, 80, 255);
+  border: 2px solid rgb(80, 80, 255);
+  width: 30%;
+  height: 40px;
+  border-radius: 25px;
+  margin-right: 40px;
+}
+.botun button:enabled {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  background-color: white;
+  color: rgb(0, 0, 230);
+  border: 2px solid rgb(0, 0, 230);
+  width: 30%;
+  height: 40px;
+  border-radius: 25px;
+  margin-right: 40px;
+}
+.botun button:enabled:hover {
+  background-color: rgb(0, 0, 230);
+  color: white;
+  cursor: pointer;
+}
+.nemaRacun {
+  width: 100%;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 870px) {
+  .main_2 {
+    width: 70%;
+  }
+  .informacije {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sifra {
+    width: 70%;
+  }
+
+  .korisnicko {
+    width: 70%;
+  }
+  .sifra h2 {
+    font-size: 2.5vw;
+  }
+  .korisnicko h2 {
+    font-size: 2.5vw;
+  }
+  .botun {
+    width: 100%;
+  }
+  .nemaRacun {
+    font-size: 80%;
+  }
+  .prijava h1 {
+    font-size: 4vw;
+  }
+}
+@media screen and (max-width: 650px) {
+  form p {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .main_2 {
+    width: 75%;
+  }
+
+  .sifra {
+    width: 70%;
+  }
+
+  .korisnicko {
+    width: 70%;
+  }
+  .sifra h2 {
+    font-size: 4vw;
+  }
+  .korisnicko h2 {
+    font-size: 4vw;
+  }
+  .prijava h1 {
+    font-size: 5vw;
+    margin-right: 0px;
+  }
+  .botun input {
+    margin-right: 0px;
+  }
+}
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .sifra {
+    width: 80%;
+  }
+
+  .korisnicko {
+    width: 80%;
+  }
+}

@@ -1,0 +1,22 @@
+.Layout_site_container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+.Layout_container{
+    margin:0 auto;
+    max-width: 1000px;
+    width: 90%;
+}
+.Layout__nav_link{
+    
+    display: inline-block;
+    padding: 0 0.75rem;
+    cursor: pointer;
+    white-space: nowrap;
+    line-height: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    word-wrap: none;
+}

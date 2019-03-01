@@ -1,0 +1,85 @@
+.row_3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.row_3 h1 {
+  color: rgb(51, 51, 223);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.main_3 {
+  width: 80%;
+  height: 500px;
+  border-radius: 25px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #333;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 10% 60% 30%;
+}
+.naslov {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  padding-left: 22%;
+}
+.naslov p {
+  font-size: 2vw;
+}
+.slika_grad {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.opis_grad {
+  margin-top: 20px;
+  padding-right: 20px;
+  grid-column: 2/3;
+  grid-row: 2/4;
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.info_grad {
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.slikaa {
+  width: 70%;
+  height: 80%;
+  border-radius: 8%;
+}
+.opis_grad input {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  background-color: white;
+  color: rgb(70, 70, 223);
+  border: 2px solid rgb(70, 70, 223);
+  width: 30%;
+  height: 40px;
+  border-radius: 25px;
+}
+
+.opis_grad input:hover {
+  background-color: rgb(70, 70, 223);
+  color: white;
+}
